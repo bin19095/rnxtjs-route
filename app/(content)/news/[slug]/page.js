@@ -9,7 +9,7 @@ export default function NewsDetailPage({params}){
    if(!newsItem){
       notFound();
    }
-   return(<article>
+   return(<article className="news-article">
       <header>
       <Link href={`/news/${newsItem.slug}/image`}>
       <img src={`/images/news/${newsItem.image}`} alt={newsItem.title} />
